@@ -18,11 +18,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Evan's blog",
+      title: "JackCin's blog",
       description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
     }
   },
-  // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
+  base: '/vuepress-theme-vdoing/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
 
   // 主题配置
   themeConfig: {
@@ -30,82 +30,76 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '前端',
+        text: '三剑客',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
-            text: '前端文章',
+            text: '页面',
             items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+              { text: ' Html', link: '/html/' },
+              { text: ' CSS', link: '/css/' },
             ],
           },
           {
-            text: '学习笔记',
+            text: '核心',
             items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
-              },
+              { text: ' JavaScript基础', link: '/js基础/' },
+              { text: ' JavaScript高级', link: '/js高级/' },
+              { text: ' es6 ', link: '/ES6/' },
             ],
           },
         ],
       },
       {
-        text: '页面',
+        text: '进阶',
         link: '/ui/',
         items: [
-          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+          { text: 'jQuery', link: '/jquery/' },
+          { text: 'Node', link: '/node/' },
+          { text: 'Ajax', link: '/ajax/' },
+          { text: 'Webpack', link: '/webpack/' },
         ],
       },
       {
-        text: '技术',
+        text: '框架',
         link: '/technology/',
         items: [
-          { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
-          { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
-          { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
-          { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
+          { text: 'Vue2', link: '/vue2/' },
+          { text: 'Vue3 + ts', link: '/vue3-ts/' },
+          { text: '小程序', link: '/小程序/' },
+        ],
+      },
+      {
+        text: '其他',
+        link: '/other/',
+        items: [
+          { text: 'git', link: '/git/' },
+          { text: 'Element-UI', link: '/elementUI/' },
+          { text: 'ECharts', link: '/echarts/' },
+          { text: '计算机网络', link: '/计网/' },
+          { text: '数据结构与算法', link: '/算法/' },
         ],
       },
       {
         text: '更多',
         link: '/more/',
         items: [
-          { text: '学习', link: '/pages/f2a556/' },
-          { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-          { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-          { text: '实用技巧', link: '/pages/baaa02/' },
-          { text: '友情链接', link: '/friends/' },
+          { text: '面经', link: '/面经/' },
+          { text: '竞赛', link: '/竞赛/' },
+          { text: '杂货', link: '/杂货/' },
+          { text: '心情', link: '/心情/' },
         ],
       },
       { text: '关于', link: '/about/' },
       {
         text: '收藏',
         link: '/pages/beb6c0bd8a66cea6/',
-        // items: [
-        //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-        //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-        //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-        // ],
+        items: [
+          { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
+          { text: '资源', link: '/pages/eee83a9211a70f9d/' },
+          { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
+        ],
       },
       {
         text: '索引',
@@ -119,7 +113,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    repo: 'JackCin877/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -136,13 +130,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
 
-    // bodyBgImg: [
-    //   'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
-    //   'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
-    //   'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
-    // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
+    bodyBgImg: [
+      'https://img.zcool.cn/community/017d43613f222011013f47206eca33.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_3000,limit_1/sharpen,100',
+      'https://img.zcool.cn/community/018aa56100bdcc11013f472009a844.jpg?x-oss-process=image/resize,h_600/format,jpg',
+      'https://img.zcool.cn/community/01b964615ea69a11013e89433d4692.jpg?x-oss-process=image/resize,h_600/format,jpg'
+    ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
     // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~1.0, 默认0.5
-    // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
+    bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
     //   '图标地址1',
@@ -162,19 +156,19 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // defaultMode: 'auto',
 
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
-    sidebar: 'structuring',
+    sidebar: { mode: 'structuring', collapsable: true },
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: 'xugaoyi', // 必需
-      link: 'https://github.com/xugaoyi', // 可选的
+      name: 'JackCin', // 必需
+      link: 'https://github.com/JackCin877', // 可选的
     },
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      name: 'Evan Xu',
-      slogan: '前端界的小学生',
+      avatar: 'https://cdn.staticaly.com/gh/JackCin877/image-hosting@master/blog/夏目.4npqayre72c0.jpg',
+      name: 'JackCin',
+      slogan: '前端小菜鸡(✪ω✪)',
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
@@ -184,12 +178,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com',
+          link: 'mailto:2269233033@qq.com',
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi',
+          link: 'https://github.com/JackCin877',
         },
         {
           iconClass: 'icon-erji',
@@ -209,8 +203,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
-        name: 'xugaoyi',
-        link: 'https://github.com/xugaoyi'
+        name: 'JackCin',
+        link: 'https://github.com/JackCin877'
       }
     },
 
@@ -356,7 +350,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   markdown: {
     lineNumbers: true,
-    extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
+    extractHeaders: ['h2', 'h3', 'h4'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
   },
 
   // 监听文件变化并重新构建
