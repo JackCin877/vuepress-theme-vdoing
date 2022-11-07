@@ -56,7 +56,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/ui/',
         items: [
           { text: 'jQuery', link: '/jquery/' },
-          { text: 'Node', link: '/node/' },
+          { text: 'Node', link: '/pages/d91b9c/' },
           { text: 'Ajax', link: '/pages/fee75e/' },
           { text: 'Webpack', link: '/webpack/' },
         ],
