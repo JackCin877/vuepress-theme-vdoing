@@ -30,46 +30,43 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '三剑客',
+        text: '前端',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
             text: '页面',
             items: [
-              { text: ' Html', link: '/html/' },
-              { text: ' CSS', link: '/css/' },
+              { text: 'Html', link: '/html/' },
+              { text: 'CSS', link: '/css/' },
             ],
           },
           {
             text: '核心',
             items: [
-              { text: ' JavaScript基础', link: '/js基础/' },
-              { text: ' JavaScript高级', link: '/js高级/' },
-              { text: ' es6 ', link: '/ES6/' },
+              { text: 'JavaScript基础', link: '/js基础/' },
+              { text: 'JavaScript高级', link: '/js高级/' },
+            ],
+          },
+          {
+            text: '框架',
+            items: [
+              { text: ' Vue', link: '/vue/' },
             ],
           },
         ],
       },
       {
         text: '进阶',
-        link: '/ui/',
+        link: '/up/',
         items: [
           { text: 'jQuery', link: '/jquery/' },
           { text: 'Node', link: '/pages/d91b9c/' },
           { text: 'Ajax', link: '/pages/fee75e/' },
-          { text: 'Webpack', link: '/webpack/' },
+
         ],
       },
-      {
-        text: '框架',
-        link: '/technology/',
-        items: [
-          { text: 'Vue2', link: '/vue2/' },
-          { text: 'Vue3 + ts', link: '/vue3-ts/' },
-          { text: '小程序', link: '/小程序/' },
-        ],
-      },
+
       {
         text: '其他',
         link: '/other/',
