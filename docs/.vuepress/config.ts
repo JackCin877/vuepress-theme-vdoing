@@ -66,36 +66,31 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
         ],
       },
-
       {
-        text: '其他',
-        link: '/other/',
+        text: 'Linux',
+        link: '/linux/',
+      },
+      {
+        text: '计算机基础',
+        link: '/计算机基础/',
         items: [
-          { text: 'git', link: '/git/' },
-          { text: 'Element-UI', link: '/elementUI/' },
-          { text: 'ECharts', link: '/echarts/' },
-          { text: '计算机网络', link: '/计网/' },
-          { text: '数据结构与算法', link: '/算法/' },
+          { text: '操作系统', link: '/操作系统/' },
+          { text: '数据结构与算法', link: '/数据结构与算法/' },
         ],
       },
       {
-        text: '更多',
-        link: '/more/',
+        text: '单片机',
+        link: '/单片机/',
         items: [
-          { text: '面经', link: '/面经/' },
-          { text: '竞赛', link: '/竞赛/' },
-          { text: '杂货', link: '/杂货/' },
-          { text: '心情', link: '/心情/' },
+          { text: '51单片机', link: '/51单片机/' },
+          { text: 'CC2530' },
         ],
       },
-      { text: '关于', link: '/about/' },
       {
         text: '收藏',
         link: '/pages/beb6c0bd8a66cea6/',
         items: [
           { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-          { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-          { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
         ],
       },
       {
